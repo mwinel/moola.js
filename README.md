@@ -225,9 +225,9 @@ console.log(convertedAmount.format()); // Output: 91.55 €
 The `sum` function aggregates a collection of `Money` objects into a single `Money` object. This function is useful when you need to calculate the total amount from multiple monetary values, provided they are all in the same currency.
 
 ```typescript
-const amount1 = new Money(10.5, USD);
-const amount2 = new Money(5.75, USD);
-const amount3 = new Money(8.25, USD);
+const amount1 = money(10.5, USD);
+const amount2 = money(5.75, USD);
+const amount3 = money(8.25, USD);
 
 const total = sum([amount1, amount2, amount3]);
 
