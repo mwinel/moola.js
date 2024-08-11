@@ -54,5 +54,8 @@
   },
   "dependencies": {
     "decimal.js": "^10.4.3"
+  },
+  "publishConfig": {
+    "@mwinel:registry": "https://npm.pkg.github.com"
   }
 }
