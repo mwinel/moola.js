@@ -12,7 +12,6 @@ export type Snapshot = {
  *
  * @param money - The Money object to convert.
  * @returns An object representing the Money object in a format suitable for storage in a database.
- *
  * @example
  * const USD = new Currency('USD', 2, 'en-US');
  * const money = money(100, USD); // $100.00

@@ -1,5 +1,5 @@
-import { Currency } from "../currency";
-import { Money } from "../money";
+import { Currency } from '../currency';
+import { Money } from '../money';
 
 /**
  * Validates the given currency.
@@ -8,7 +8,7 @@ import { Money } from "../money";
  */
 export function validateCurrency(currency: Currency): void {
   if (!currency || !currency.code) {
-    throw new Error("Invalid currency");
+    throw new Error('Invalid currency');
   }
 }
 
@@ -19,7 +19,7 @@ export function validateCurrency(currency: Currency): void {
  */
 export function validateAmount(amount: number): void {
   if (isNaN(amount) || amount < 0) {
-    throw new Error("Amount must be a non-negative number");
+    throw new Error('Amount must be a non-negative number');
   }
 }
 
@@ -30,7 +30,7 @@ export function validateAmount(amount: number): void {
  */
 export function validatePercentage(percent: number): void {
   if (percent < 0) {
-    throw new Error("Percentage must be non-negative");
+    throw new Error('Percentage must be non-negative');
   }
 }
 
@@ -41,7 +41,7 @@ export function validatePercentage(percent: number): void {
  */
 export function validateNonEmptyMoneyArray(moneyCollection: Money[]): void {
   if (moneyCollection.length === 0) {
-    throw new Error("No Money objects provided");
+    throw new Error('No Money objects provided');
   }
 }
 
@@ -55,10 +55,10 @@ export function validateSameCurrency(moneyCollection: Money[]): void {
 
   const currency = moneyCollection[0]?.getCurrency();
   const allSameCurrency = moneyCollection.every(
-    (money) => money.getCurrency().code === currency?.code,
+    money => money.getCurrency().code === currency?.code
   );
 
   if (!allSameCurrency) {
-    throw new Error("All Money objects must have the same currency");
+    throw new Error('All Money objects must have the same currency');
   }
 }

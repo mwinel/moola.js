@@ -1,8 +1,8 @@
-import { Money } from "./money";
+import { Money } from './money';
 import {
   validateNonEmptyMoneyArray,
   validateSameCurrency,
-} from "./utils/validations";
+} from './utils/validations';
 
 /**
  * Finds the maximum Money object among the provided Money objects.
@@ -12,7 +12,6 @@ import {
  * @param moneyCollection An array of Money objects to compare.
  * @returns The Money object with the largest amount.
  * @throws Error if the array is empty or if the Money objects have different currencies.
- * 
  * @example
  * const USD = new Currency('USD', 2, 'en-US');
  * const money1 = money(100, USD); // $100.00

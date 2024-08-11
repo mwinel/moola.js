@@ -7,7 +7,6 @@ import { Money, RoundingMode } from './money';
  * @param money - The Money object to round.
  * @param mode - The rounding mode to use (default is RoundingMode.ROUND_HALF_UP).
  * @returns A new Money object with the amount rounded to the specified precision.
- *
  * @example
  * const USD = new Currency('USD', 2);
  * const money = money(100.55, USD); // $100.55

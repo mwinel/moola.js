@@ -4,11 +4,9 @@ import { Money } from './money';
 /**
  * Sums up a collection of Money objects.
  * All Money objects in the collection must have the same currency.
- *
  * @param moneyCollection An array of Money objects to sum up.
  * @returns A new Money object representing the total sum.
  * @throws Error if the collection is empty or contains Money objects with different currencies.
- *
  * @example
  * const USD = new Currency('USD', 2);
  * const amount1 = money(100, USD); // $100.00

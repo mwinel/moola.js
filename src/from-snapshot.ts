@@ -8,7 +8,6 @@ import { Snapshot } from './to-snapshot';
  *
  * @param snapshot An object representing the stored Money object.
  * @returns A Money object reconstructed from the database format.
- *
  * @example
  * const snapshot = { amount: 99.99, currency: 'USD', precision: 2, locale: 'en-US' };
  * const moneyObject = fromSnapshot(snapshot);

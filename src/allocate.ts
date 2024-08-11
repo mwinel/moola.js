@@ -19,7 +19,6 @@ import { Money } from './money';
  * @param money - The Money object to allocate.
  * @param ratios - An array of ratios to allocate the amount. Ratios can be numbers or objects with amount and scale properties.
  * @returns An array of Money objects with allocated amounts.
- *
  * @example
  * // Allocate $100.00 across ratios [2, 3, 5]
  * const usd = new Currency('USD', 2);

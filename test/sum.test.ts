@@ -9,7 +9,6 @@ describe('SumMoneyCollection', () => {
     const amount3 = money(18.25, USD);
     const lineItems = [amount1, amount2, amount3];
     const result = sum(lineItems);
-
     expect(result.format()).toEqual('$143.24');
   });
 
@@ -18,7 +17,6 @@ describe('SumMoneyCollection', () => {
     const amount2 = money(24.99, EUR);
     const amount3 = money(18.25, USD);
     const lineItems = [amount1, amount2, amount3];
- 
     expect(() => sum(lineItems)).toThrow(
       'All Money objects must have the same currency.'
     );

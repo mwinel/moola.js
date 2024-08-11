@@ -3,13 +3,11 @@ import { Currency } from './currency';
 
 /**
  * Converts a Money object to another currency using the provided exchange rates.
- * 
  * @param amount - The Money object to convert.
  * @param targetCurrency - The target Currency object to convert to.
  * @param rates - An object containing the exchange rates with currency codes as keys.
  * @returns A new Money object in the target currency.
  * @throws Error if the conversion rate is not available for the target currency.
- * 
  * @example
  * const USD = new Currency('USD', 2, 'en-US');
  * const EUR = new Currency('EUR', 2, 'en-DE);
