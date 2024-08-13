@@ -58,5 +58,8 @@
   },
   "dependencies": {
     "decimal.js": "^10.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
